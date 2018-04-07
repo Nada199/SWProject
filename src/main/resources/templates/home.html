@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home</title>
+</head>
+<body>
+<h1>Welcom Customer</h1>
+
+<table border ="1">
+  <tr> 
+  <td>id</td>
+  <td>name</td>
+  <td>price</td>
+  <td>amount available</td>
+  </tr>
+  <tr th:each="product:${products}">
+  <td th:text="${product.id}"></td>
+  <td th:text="${product.name}"></td>
+  <td th:text="${product.price}"></td>
+  <td th:text="${product.amount}"></td>
+  
+  </tr>
+</table>
+<br> <br> <br>
+
+<form method="post" action="#" >
+ID:          <input type="text"   value= "id"><br></br>
+
+<input type="submit" value="BUY"> <br></br>
+</form>
+</body>
+</html>
