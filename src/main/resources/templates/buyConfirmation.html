@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Buy</title>
+</head>
+<body>
+<h2>confirm buying products</h2>
+<br></br>
+<br></br>
+<form method="post" action="#" th:action="@{/buyConfirmation}"  th:object="${user}">
+      Email<input type="text" th:field="*{email}"/>
+      <br></br>
+      Address<input type="text" name="address"/>
+
+<input type="submit" value="Confirm"> <br></br>
+</form>
+
+</body>
+</html>

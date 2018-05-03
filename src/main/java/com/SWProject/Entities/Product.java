@@ -16,20 +16,10 @@ public class Product {
 	private String type;
 	private double price;
 	private Integer amount;
+	private String action;
+	private String offer;
 
 	//protected Brand brand;
-
-
-
-
-	public Integer getAmount() {
-		return amount;
-	}
-
-
-	public void setAmount(Integer amount) {
-		this.amount = amount;
-	}
 
 
 	public Product() {
@@ -40,12 +30,14 @@ public class Product {
 		price = 0.0;
 		category="";
 		type="";
-amount =0;
+        amount =0;
+        action="";
+        offer="";
 		//brand=new Brand();
 		}
-	
-	
-	public Product(Integer id, String name, String productid, String category, String type, double price,int amount) {
+
+	public Product(Integer id, String name, String productid, String category, String type, double price,
+			Integer amount, String action, String offer) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -53,10 +45,34 @@ amount =0;
 		this.category = category;
 		this.type = type;
 		this.price = price;
-		this.amount=amount;
-		//this.brand = brand;
+		this.amount = amount;
+		this.action = action;
+		this.offer = offer;
 	}
 
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getProductid() {
+		return Productid;
+	}
+
+	public void setProductid(String productid) {
+		Productid = productid;
+	}
 
 	public String getCategory() {
 		return category;
@@ -66,64 +82,45 @@ amount =0;
 		this.category = category;
 	}
 
-
-
 	public String getType() {
 		return type;
 	}
-
-
 
 	public void setType(String type) {
 		this.type = type;
 	}
 
-
-
 	public double getPrice() {
 		return price;
 	}
-
-
 
 	public void setPrice(double price) {
 		this.price = price;
 	}
 
-
-
-/*	public Brand getBrand() {
-		return brand;
+	public Integer getAmount() {
+		return amount;
 	}
 
-
-
-	public void setBrand(Brand brand) {
-		this.brand = brand;
+	public void setAmount(Integer amount) {
+		this.amount = amount;
 	}
-*/
+
+	public String getAction() {
+		return action;
+	}
+
+	public void setAction(String action) {
+		this.action = action;
+	}
+
+	public String getOffer() {
+		return offer;
+	}
+
+	public void setOffer(String offer) {
+		this.offer = offer;
+	}
 
 	
-	
-
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getProductid() {
-		return Productid;
-	}
-	public void setProductid(String productid) {
-		Productid = productid;
-	}
-	
-
 }

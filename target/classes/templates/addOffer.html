@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ADD Offer</title>
+</head>
+<body>
+<h1>Add offer</h1>
+<form method="post" action="#" th:action="@{/addOffer}" th:object="${Product}">
+ID: <input type="text" th:field="*{Productid}"><br></br>
+Offer <input type="text" th:field="*{offer}"><br></br>
+   <input type="submit" value="submit"> <br></br>
+
+</form>
+</body>
+</html>
